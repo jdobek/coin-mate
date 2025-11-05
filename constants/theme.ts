@@ -1,10 +1,23 @@
 /**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
+ * Coin Mate App Colors
+ * Global color swatches used throughout the app
  */
 
 import { Platform } from 'react-native';
 
+export const AppColors = {
+  white: '#FFFFFF',
+  greyLight: '#F3F3F3',
+  greyMedium: '#D0D0D0',
+  greyDark: '#6E6E6E',
+  black: '#000000',
+  greenLight: '#D2F4E4',
+  green: '#27B470',
+  redLight: '#FFE7E7',
+  red: '#FF4242',
+} as const;
+
+// Legacy Colors export for compatibility (can be removed later if not needed)
 const tintColorLight = '#0a7ea4';
 const tintColorDark = '#fff';
 
@@ -27,6 +40,17 @@ export const Colors = {
   },
 };
 
+/**
+ * Coin Mate App Fonts
+ * Google Fonts: Orelega One, Inter Tight, Inter
+ */
+export const AppFonts = {
+  orelegaOne: 'OrelegaOne-Regular',
+  interTight: 'InterTight-Regular',
+  inter: 'Inter-Regular',
+} as const;
+
+// Legacy Fonts export for compatibility (can be removed later if not needed)
 export const Fonts = Platform.select({
   ios: {
     /** iOS `UIFontDescriptorSystemDesignDefault` */
