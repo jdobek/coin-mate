@@ -62,10 +62,9 @@ const styles = StyleSheet.create({
     paddingBottom: 20,
   },
   title: {
-    fontSize: 32,
-    fontWeight: '700',
+    fontSize: 40,
     color: AppColors.black,
-    fontFamily: 'Inter_700Bold',
+    fontFamily: 'OrelegaOne_400Regular',
   },
   emptyState: {
     flex: 1,
@@ -80,10 +79,11 @@ const styles = StyleSheet.create({
   },
   emptyStateTitle: {
     fontSize: 24,
-    fontWeight: '600',
+    fontWeight: '800',
     color: AppColors.black,
     marginBottom: 8,
-    fontFamily: 'Inter_600SemiBold',
+    fontFamily: 'Inter_700Bold',
+    letterSpacing: -0.25,
   },
   emptyStateSubtitle: {
     fontSize: 16,
@@ -97,6 +97,12 @@ const styles = StyleSheet.create({
   entriesListContent: {
     padding: 20,
   },
+  entriesPlaceholder: {
+    fontSize: 16,
+    color: AppColors.greyDark,
+    textAlign: 'center',
+    fontFamily: 'Inter_400Regular',
+  },
   loadingText: {
     fontSize: 16,
     color: AppColors.greyDark,
@@ -106,7 +112,7 @@ const styles = StyleSheet.create({
   },
   plusButton: {
     position: 'absolute',
-    bottom: 100,
+    bottom: 20,
     right: 20,
     width: 64,
     height: 64,
@@ -118,7 +124,7 @@ const styles = StyleSheet.create({
     shadowColor: AppColors.black,
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.25,
-    shadowRadius: 4,
+    shadowRadius: 10,
   },
   plusButtonText: {
     color: AppColors.white,
