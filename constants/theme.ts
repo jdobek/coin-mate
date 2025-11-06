@@ -10,6 +10,7 @@ export const AppColors = {
   greyLight: '#F3F3F3',
   greyMedium: '#D0D0D0',
   greyDark: '#6E6E6E',
+  greyAccent: '#D0D5DC',
   black: '#000000',
   greenLight: '#D2F4E4',
   green: '#27B470',
